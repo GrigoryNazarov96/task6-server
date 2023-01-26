@@ -24,7 +24,7 @@ const server = createServer(app);
 
 export const io = new Server(server, {
   cors: {
-    origin: process.env.REACT_URL,
+    origin: '*',
   },
 });
 
